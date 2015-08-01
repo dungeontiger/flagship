@@ -1,0 +1,9 @@
+{
+	"smallFusion": {
+		"name": "Small Fusion",
+		"description": "Small Fusion Reactor",
+		"mass": 10000,
+		"cost": 100,
+		"output": 10
+	}
+}

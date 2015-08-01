@@ -1,0 +1,52 @@
+[
+	{
+		"name": "Grim Serpents",
+		"ships":
+		[
+			{
+				"name": "Dancing Scimitar",
+				"classRef": "scimitar",
+				"position": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"velocity": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"acceleration": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			}
+		]
+	},
+	{
+		"name": "Imperium",
+		"ships":
+		[
+			{
+				"name": "Emperor's Voice",
+				"classRef": "scimitar",
+				"position": {
+					"x": 10000,
+					"y": 0,
+					"z": 0
+				},
+				"velocity": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"acceleration": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				}
+			}
+		]
+	}	
+]

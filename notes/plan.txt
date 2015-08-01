@@ -1,0 +1,20 @@
+ship class files
+ship files (?)
+fleet files
+battle file
+engine
+
+basic sensors
+
+chance to detect is based on target distance and mass
+% detect = Optimum range / range^2 * mass / optium mass ( - target modifiers )
+
+units:
+
+kg	mass
+km	distance
+MW	power
+km/s	speed
+km/s^2	acceleration
+MJ	energy (damage, shields)
+MN	thrust

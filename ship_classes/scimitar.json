@@ -1,0 +1,19 @@
+{
+   "name": "Scimitar",
+   "components": [
+      {
+         "sensors": "basic1"
+      },
+      {
+         "powerplants": "smallFusion",
+         "copies": 2
+      },
+      {
+         "engines": "basicReaction"
+      }
+   ],
+   "mass": 31200,
+   "cost": 1030,
+   "designation": "Light Fighter",
+   "tonnage": 31
+}
