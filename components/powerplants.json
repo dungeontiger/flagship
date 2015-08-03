@@ -2,7 +2,7 @@
 	"smallFusion": {
 		"name": "Small Fusion",
 		"description": "Small Fusion Reactor",
-		"mass": 10000,
+		"mass": 10,
 		"cost": 100,
 		"output": 10
 	}

@@ -2,7 +2,7 @@
 	"basicReaction":
 	{
 		"description": "Basic reaction drive.",
-		"mass": 5000,
+		"mass": 50,
 		"cost": 300,
 		"input": 20,
 		"thrust": 10

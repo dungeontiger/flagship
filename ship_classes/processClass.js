@@ -33,18 +33,18 @@ for (var i = 0; i < shipClass.components.length; i++) {
 	}
 }
 
-// add a mass percentage 20% for pilots and generic equipment, minimum 200kg
-var genericMass = Math.max( 200, mass * 0.2 );
+// add a mass percentage 20% for pilots and generic equipment, minimum 5 tonnes
+var genericMass = Math.max( 5, mass * 0.2 );
 mass += genericMass;
 
-// cost of generic mass is 0.1 MCr per kg
-cost += 0.1 * genericMass;
+// cost of generic mass is 10 MCr per tonne
+cost += 10 * genericMass;
 
 // choose a designation based on the total mass
 shipClass.designation = getDesignation(mass);
 
 // update the tonnage which is a nice number to indicate size
-shipClass.tonnage = Math.round(mass / 1000);
+shipClass.tonnage = Math.round(mass);
 
 // make backup class file?
 
@@ -109,31 +109,35 @@ function writeHashFile(shipClassName, hash) {
 function getDesignation(shipMass) {
 	var designations = [
 		{
-			mass: 50000,
+			mass: 100,
 			designation: 'Light Fighter'
 		},
 		{
-			mass: 100000,
+			mass: 500,
 			designation: 'Fighter'
 		},
 		{
-			mass: 200000,
+			mass: 1000,
 			designation: 'Heavy Fighter'
 		},
 		{
-			mass: 500000,
+			mass: 5000,
+			designation: 'Patrol Boat'	
+		},
+		{
+			mass: 10000,
 			designation: 'Corvette'
 		},
 		{
-			mass: 1000000,
+			mass: 50000,
 			designation: 'Frigate'
 		},
 		{
-			mass: 5000000,
+			mass: 100000,
 			designation: 'Destroyer'
 		},
 		{
-			mass: 7500000,
+			mass: 200000,
 			designation: 'Heavy Destoryer'
 		},
 		{
@@ -141,15 +145,27 @@ function getDesignation(shipMass) {
 			designation: 'Cruiser'
 		},
 		{
-			mass: 50000000,
+			mass: 250000,
+			designation: 'Battlecruiser'
+		},
+		{
+			mass: 500000,
 			designation: 'Battleship'
 		},
 		{
-			mass: 100000000,
+			mass: 1000000,
+			designation: 'Heavy Battleship'
+		},
+		{
+			mass: 2500000,
 			designation: 'Dreadnought'
 		},
 		{
-			mass: 1000000000,
+			mass: 5000000,
+			designatin: 'Super Dreadnought'	
+		},
+		{
+			mass: 10000000,
 			designation: 'Battle Station'
 		}
 	];

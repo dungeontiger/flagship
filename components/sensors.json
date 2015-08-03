@@ -2,7 +2,7 @@
 	"basic1": {
 		"name": "Basic Mk 1",
 		"description": "Basic mass detection sensors.",
-		"mass": 1000,
+		"mass": 1,
 		"power": 10,
 		"cost": 10,
 		"type": "basic",
