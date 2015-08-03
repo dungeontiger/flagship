@@ -15,8 +15,14 @@ var gameDir = './games/' + game;
 logger.create(gameDir);
 logger.println('Game: ' + game);
 
+// set the logger
 gameEngine.setLogger(logger);
+
+// load players and fleets
 gameEngine.loadBattle(JSON.parse(fs.readFileSync(gameDir + '/battle.json', 'utf8')));
+
+// set the turn duration to 1 minute
+gameEngine.setTurnInterval(1);
 
 while (!gameEngine.gameOver()) {
 	gameEngine.computeTurn();

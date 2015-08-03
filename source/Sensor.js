@@ -50,7 +50,7 @@ Sensor.prototype.scan = function(ship, target) {
 	}
 	
 	var range = Util.getRange(ship, target);
-	this.logger.println('Range from ' + ship.name + ' to ' + target.name + ' is ' + range + ' km.');
+	this.logger.println('Range from ' + ship.name + ' to ' + target.name + ' is ' + Util.round(range, 0) + ' km.');
 	
 	if (this.sensor.type == 'basic') {
 		// chance to detect is proportial to mass of target and inversely propertional to distance to targe

@@ -75,6 +75,9 @@ GameEngine.computeTurn = function() {
 			// 2. Scan for other ships
 			// TODO: merge fleet contacts if in communication
 			this.scan(ship);
+			
+			// 3. Move ship and calcuate new speeds
+			this.move(ship);
 		}
 	}
 
@@ -185,6 +188,23 @@ GameEngine.scan = function(ship) {
 		}
 	}
 	this.logger.println(msg);
+};
+
+GameEngine.move = function(ship) {
+	// move the ship based on its current velocity
+	// update the ship's velocity based on its current acceleration
+	
+	ship.position.x += ship.velocity.x * this.turnInterval;
+	ship.position.y += ship.velocity.y * this.turnInterval;
+	ship.position.z += ship.velocity.z * this.turnInterval;
+	
+	this.logger.println(ship.name + ' moved to (' + ship.position.x + ', ' + ship.position.y + ', ' + ship.position.z + ') km' );
+
+	ship.velocity.x += ship.acceleration.x * this.turnInterval;
+	ship.velocity.y += ship.acceleration.y * this.turnInterval;
+	ship.velocity.z += ship.acceleration.z * this.turnInterval;
+
+	this.logger.println(ship.name + ' accelerated to (' + ship.velocity.x + ', ' + ship.velocity.y + ', ' + ship.velocity.z + ') km/min' );
 };
 
 GameEngine.gameOver = function() {

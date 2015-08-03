@@ -4,10 +4,10 @@ Number of players: 2
 Player 1: Grim Serpents (ID_1)
 With 1 ships
 Loading class: scimitar
-Ship: Dancing Scimitar (ID_2) 25 tonnes Light Fighter, Scimitar class
+Ship: Dancing Scimitar (ID_2) 31 tonnes Light Fighter, Scimitar class
 Player 2: Imperium (ID_3)
 With 1 ships
-Ship: Emperor's Voice (ID_4) 25 tonnes Light Fighter, Scimitar class
+Ship: Emperor's Voice (ID_4) 31 tonnes Light Fighter, Scimitar class
 === Starting turn #1
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -18,8 +18,10 @@ Dancing Scimitar has 10 MW in unused power.
 Dancing Scimitar performing sensor scan.
 Using Basic Mk 1 sensors.
 Range from Dancing Scimitar to Emperor's Voice is 10000 km.
-Detected Emperor's Voice chance was 252%
+Detected Emperor's Voice chance was 312%
 Dancing Scimitar has contacts for: Emperor's Voice, 
+Dancing Scimitar moved to (0, 0, 0) km
+Dancing Scimitar accelerated to (1300, 13, -3) km/min
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -29,8 +31,10 @@ Emperor's Voice has 10 MW in unused power.
 Emperor's Voice performing sensor scan.
 Using Basic Mk 1 sensors.
 Range from Emperor's Voice to Dancing Scimitar is 10000 km.
-Detected Dancing Scimitar chance was 252%
+Detected Dancing Scimitar chance was 312%
 Emperor's Voice has contacts for: Dancing Scimitar, 
+Emperor's Voice moved to (10000, 0, 0) km
+Emperor's Voice accelerated to (0, 0, 0) km/min
 === Starting turn #2
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -41,8 +45,10 @@ Dancing Scimitar has 10 MW in unused power.
 Dancing Scimitar performing sensor scan.
 Using Basic Mk 1 sensors.
 Range from Dancing Scimitar to Emperor's Voice is 10000 km.
-Maintained contact to Emperor's Voice chance was 504%
+Maintained contact to Emperor's Voice chance was 624%
 Dancing Scimitar has contacts for: Emperor's Voice, 
+Dancing Scimitar moved to (1300, 13, -3) km
+Dancing Scimitar accelerated to (2600, 26, -6) km/min
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -51,9 +57,11 @@ Powering sensors Basic Mk 1.
 Emperor's Voice has 10 MW in unused power.
 Emperor's Voice performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Emperor's Voice to Dancing Scimitar is 10000 km.
-Maintained contact to Dancing Scimitar chance was 504%
+Range from Emperor's Voice to Dancing Scimitar is 8700 km.
+Maintained contact to Dancing Scimitar chance was 824.41%
 Emperor's Voice has contacts for: Dancing Scimitar, 
+Emperor's Voice moved to (10000, 0, 0) km
+Emperor's Voice accelerated to (0, 0, 0) km/min
 === Starting turn #3
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -63,9 +71,11 @@ Powering sensors Basic Mk 1.
 Dancing Scimitar has 10 MW in unused power.
 Dancing Scimitar performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Dancing Scimitar to Emperor's Voice is 10000 km.
-Maintained contact to Emperor's Voice chance was 504%
+Range from Dancing Scimitar to Emperor's Voice is 8700 km.
+Maintained contact to Emperor's Voice chance was 824.41%
 Dancing Scimitar has contacts for: Emperor's Voice, 
+Dancing Scimitar moved to (3900, 39, -9) km
+Dancing Scimitar accelerated to (3900, 39, -9) km/min
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -74,9 +84,11 @@ Powering sensors Basic Mk 1.
 Emperor's Voice has 10 MW in unused power.
 Emperor's Voice performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Emperor's Voice to Dancing Scimitar is 10000 km.
-Maintained contact to Dancing Scimitar chance was 504%
+Range from Emperor's Voice to Dancing Scimitar is 6100 km.
+Maintained contact to Dancing Scimitar chance was 1676.9%
 Emperor's Voice has contacts for: Dancing Scimitar, 
+Emperor's Voice moved to (10000, 0, 0) km
+Emperor's Voice accelerated to (0, 0, 0) km/min
 === Starting turn #4
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -86,9 +98,11 @@ Powering sensors Basic Mk 1.
 Dancing Scimitar has 10 MW in unused power.
 Dancing Scimitar performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Dancing Scimitar to Emperor's Voice is 10000 km.
-Maintained contact to Emperor's Voice chance was 504%
+Range from Dancing Scimitar to Emperor's Voice is 6100 km.
+Maintained contact to Emperor's Voice chance was 1676.9%
 Dancing Scimitar has contacts for: Emperor's Voice, 
+Dancing Scimitar moved to (7800, 78, -18) km
+Dancing Scimitar accelerated to (5200, 52, -12) km/min
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -97,9 +111,11 @@ Powering sensors Basic Mk 1.
 Emperor's Voice has 10 MW in unused power.
 Emperor's Voice performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Emperor's Voice to Dancing Scimitar is 10000 km.
-Maintained contact to Dancing Scimitar chance was 504%
+Range from Emperor's Voice to Dancing Scimitar is 2201 km.
+Maintained contact to Dancing Scimitar chance was 12875.52%
 Emperor's Voice has contacts for: Dancing Scimitar, 
+Emperor's Voice moved to (10000, 0, 0) km
+Emperor's Voice accelerated to (0, 0, 0) km/min
 === Starting turn #5
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -109,9 +125,11 @@ Powering sensors Basic Mk 1.
 Dancing Scimitar has 10 MW in unused power.
 Dancing Scimitar performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Dancing Scimitar to Emperor's Voice is 10000 km.
-Maintained contact to Emperor's Voice chance was 504%
+Range from Dancing Scimitar to Emperor's Voice is 2201 km.
+Maintained contact to Emperor's Voice chance was 12875.52%
 Dancing Scimitar has contacts for: Emperor's Voice, 
+Dancing Scimitar moved to (13000, 130, -30) km
+Dancing Scimitar accelerated to (6500, 65, -15) km/min
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -120,7 +138,9 @@ Powering sensors Basic Mk 1.
 Emperor's Voice has 10 MW in unused power.
 Emperor's Voice performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Emperor's Voice to Dancing Scimitar is 10000 km.
-Maintained contact to Dancing Scimitar chance was 504%
+Range from Emperor's Voice to Dancing Scimitar is 3003 km.
+Maintained contact to Dancing Scimitar chance was 6919.65%
 Emperor's Voice has contacts for: Dancing Scimitar, 
+Emperor's Voice moved to (10000, 0, 0) km
+Emperor's Voice accelerated to (0, 0, 0) km/min
 End of log.
