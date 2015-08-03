@@ -7,6 +7,6 @@
 		"cost": 10,
 		"type": "basic",
 		"targetRange": 1e4,
-		"targetMass": 1e4
+		"targetMass": 100
 	}
 }

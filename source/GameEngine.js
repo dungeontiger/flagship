@@ -1,6 +1,8 @@
 var fs = require('fs');
+var Util = require('./Util');
 var Sensor = require('./Sensor');
 var Powerplant = require('./Powerplant');
+var Engine = require('./Engine.js');
 
 function GameEngine() {
 }
@@ -25,6 +27,7 @@ GameEngine.loadBattle = function(battle) {
 	// load all the component files
 	this.sensors = this.loadComponentsFile('sensors'); 
 	this.powerplants = this.loadComponentsFile('powerplants');
+	this.engines = this.loadComponentsFile('engines');
 
 	// load the players
 	for (var i = 0; i < battle.length; i++) {
@@ -76,8 +79,11 @@ GameEngine.computeTurn = function() {
 			// TODO: merge fleet contacts if in communication
 			this.scan(ship);
 			
-			// 3. Move ship and calcuate new speeds
+			// 3. Move ship and calcuate new speed and acceleration
 			this.move(ship);
+			
+			// 4. Set course and engine thrust
+			this.setHeadingAndEngine(ship);
 		}
 	}
 
@@ -119,6 +125,7 @@ GameEngine.powerComponents = function(ship) {
 	// engines
 	// weapons
 	
+	// sensors
 	for (var i = 0; i < ship.sensors.length; i++) {
 		var sensor = ship.sensors[i];
 		if (sensor.getPowerInput() <= ship.power) {
@@ -128,6 +135,19 @@ GameEngine.powerComponents = function(ship) {
 		} else {
 			sensor.setPowered(false);
 			this.logger.println('No Power for sensors ' + sensor.getName() + '.');
+		}
+	}
+	
+	// engines
+	for (var i = 0; i < ship.engines.length; i++) {
+		var engine = ship.engines[i];
+		if (engine.getPowerInput() <= ship.power) {
+			ship.power -= engine.getPowerInput();
+			engine.setPowered(true);
+			this.logger.println('Powering engines ' + engine.getName() + '.');
+		} else {
+			sensor.setPowered(false);
+			this.logger.println('No Power for engines ' + engine.getName() + '.');
 		}
 	}
 	
@@ -205,11 +225,76 @@ GameEngine.move = function(ship) {
 	ship.velocity.z += ship.acceleration.z * this.turnInterval;
 
 	this.logger.println(ship.name + ' accelerated to (' + ship.velocity.x + ', ' + ship.velocity.y + ', ' + ship.velocity.z + ') km/min' );
+
+	// TODO: Check to see if this is correct or not
+	ship.acceleration.x += ship.thrust / ship.mass * ship.heading.x * this.turnInterval;
+	ship.acceleration.y += ship.thrust / ship.mass * ship.heading.y * this.turnInterval;
+	ship.acceleration.z += ship.thrust / ship.mass * ship.heading.z * this.turnInterval;
+
+	this.logger.println(ship.name + ' acceleration changed to (' + ship.acceleration.x + ', ' + ship.acceleration.y + ', ' + ship.acceleration.z + ') km/min^2' );
+};
+
+GameEngine.setHeadingAndEngine = function(ship) {
+	// TODO: need interesting logic to determine heading and engine settings
+	// for now, just aim at closest contact and go full power
+	
+	// TODO: this is really a navigation computer function and should be part of a component
+	// TODO: should be pluggable logic by ship designer
+	// TODO: is also based on orders and disposition
+	// TODO: Should anything happen if contact is lost
+	
+	// find closest contact
+	var closest = null;
+	var closestRange;
+	for (var contact in ship.contacts) {
+		if (ship.contacts.hasOwnProperty(contact)) {
+			if (ship.contacts[contact] == true) {
+				var target = this.ships[contact];
+				var range = Util.getRange(ship, target);	
+				if (range < closestRange || !closest) {
+					closestRange = range;
+					closest = target; 
+				}
+			}
+		}
+	}
+	
+	// if no contact, do not adjust course or engines
+	if (closest) {
+		// first we need a normalized vector toward the target ship, this will be the direction fo acceleration
+		// normalized vector has a length of 1: x = (target.x - ship.x) / range, etc...
+		
+		var x = (closest.position.x - ship.position.x) / closestRange;
+		var y = (closest.position.y - ship.position.y) / closestRange;
+		var z = (closest.position.z - ship.position.z) / closestRange;
+
+		// the change in acceleration is dependent on the thrust and the mass of the ship * direction
+		// calculate thrust produced by all functioning, powered engines
+		
+		var thrust = 0;
+		for (var i = 0; i < ship.engines.length; i++) {
+			var engine = ship.engines[i];
+			if (engine.getPowered()) {
+				thrust += engine.produceThrust(ship);
+			}
+		}
+
+		// the direction or heading is (x,y,z)
+		this.logger.println(ship.name + ' accelerating toward ' + closest.name + ' (' + Util.round(x,2) + ', ' + Util.round(y,2) + ', ' + Util.round(z,2)  + ') with thrust ' + thrust + ' MN.');
+		ship.thrust = thrust;
+		ship.heading.x = x;
+		ship.heading.y = y;
+		ship.heading.z = z;
+		
+	} else {
+		this.logger.println(ship.name + ' maintaining course and thrust.');	
+	}
 };
 
 GameEngine.gameOver = function() {
-	// just play 5 turns for now
-	return (this.turns >= 5);
+	// TODO: determine ending conditions: no ships left from one side or maximum number of turns
+	// just play 10 turns for now
+	return (this.turns >= 10);
 }
 
 GameEngine.loadShipClass = function(className) {
@@ -241,8 +326,11 @@ GameEngine.objectifyComponents = function(ship) {
 	// this can include, damage, ammo, contacts, etc...
 	// this will also make it quick to iterate over each component type
 	
+	// TODO: should be a more generic way to do this so I don't have to add code every time I add a new component type
+	
 	ship.sensors = [];
 	ship.powerplants = [];
+	ship.engines = [];
 	
 	for (var i = 0; i < ship.shipClass.components.length; i++) {
 		var component = ship.shipClass.components[i];
@@ -256,6 +344,11 @@ GameEngine.objectifyComponents = function(ship) {
 			powerplant.loadData(this.powerplants[component.powerplants]);
 			powerplant.setLogger(this.logger);
 			ship.powerplants.push(powerplant);
+		}  else if (component.engines) {
+			var engine = new Engine();
+			engine.loadData(this.engines[component.engines]);
+			engine.setLogger(this.logger);
+			ship.engines.push(engine);
 		}
 	}
 }; 

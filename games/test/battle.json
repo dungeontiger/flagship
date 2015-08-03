@@ -6,6 +6,7 @@
 			{
 				"name": "Dancing Scimitar",
 				"classRef": "scimitar",
+				"thrust": 0,
 				"position": {
 					"x": 0,
 					"y": 0,
@@ -20,6 +21,11 @@
 					"x": 1300,
 					"y": 13,
 					"z": -3
+				},
+				"heading": {
+					"x": 0,
+					"y": 0,
+					"z": 0
 				}
 			}
 		]
@@ -30,6 +36,7 @@
 		[
 			{
 				"name": "Emperor's Voice",
+				"thrust": 0,
 				"classRef": "scimitar",
 				"position": {
 					"x": 10000,
@@ -42,6 +49,11 @@
 					"z": 0
 				},
 				"acceleration": {
+					"x": 0,
+					"y": 0,
+					"z": 0
+				},
+				"heading": {
 					"x": 0,
 					"y": 0,
 					"z": 0

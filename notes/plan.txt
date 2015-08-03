@@ -11,10 +11,13 @@ chance to detect is based on target distance and mass
 
 units:
 
-kg	mass
+tonnes	mass
 km	distance
 MW	power
-km/s	speed
-km/s^2	acceleration
+km/min	speed
+km/min^2	acceleration
 MJ	energy (damage, shields)
 MN	thrust
+min time
+
+need a full class to manage a ship, not just json

@@ -1,10 +1,11 @@
 {
 	"basicReaction":
 	{
+		"name": "Reaction Drive",
 		"description": "Basic reaction drive.",
 		"mass": 50,
 		"cost": 300,
-		"input": 20,
+		"power": 10,
 		"thrust": 10
 	}
 }
