@@ -14,9 +14,9 @@ Powerplant.prototype.getName = function() {
 	return this.powerplant.name;	
 };
 
-Powerplant.prototype.producePower = function(ship) {
-	ship.power += this.powerplant.output;
+Powerplant.prototype.producePower = function() {
 	this.logger.println(this.powerplant.name + ' produces ' + this.powerplant.output + ' MW.');
+	return this.powerplant.output;
 };
 
 module.exports = Powerplant;

@@ -15,6 +15,8 @@ var gameDir = './games/' + game;
 logger.create(gameDir);
 logger.println('Game: ' + game);
 
+gameEngine.initialize();
+
 // set the logger
 gameEngine.setLogger(logger);
 

@@ -3,11 +3,11 @@ function Util() {
 	
 }
 
-Util.getRange = function(ship, target) {
+Util.getRange = function(shipPos, targetPos) {
 	return Math.sqrt( 
-			Math.pow(ship.position.x - target.position.x, 2) + 
-			Math.pow(ship.position.y - target.position.y, 2) + 
-			Math.pow(ship.position.z - target.position.z, 2));
+			Math.pow(shipPos.x - targetPos.x, 2) + 
+			Math.pow(shipPos.y - targetPos.y, 2) + 
+			Math.pow(shipPos.z - targetPos.z, 2));
 };
 
 Util.round = function(value, decimals) {

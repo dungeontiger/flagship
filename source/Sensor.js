@@ -45,16 +45,16 @@ Sensor.prototype.scan = function(ship, target) {
 	}
 	
 	var prevDetect = false;
-	if (this.contacts[target.id]) {
+	if (this.contacts[target.getId()]) {
 		prevDetect = true;
 	}
 	
-	var range = Util.getRange(ship, target);
-	this.logger.println('Range from ' + ship.name + ' to ' + target.name + ' is ' + Util.round(range, 0) + ' km.');
+	var range = Util.getRange(ship.getPosition(), target.getPosition());
+	this.logger.println('Range from ' + ship.getName() + ' to ' + target.getName() + ' is ' + Util.round(range, 0) + ' km.');
 	
 	if (this.sensor.type == 'basic') {
 		// chance to detect is proportial to mass of target and inversely propertional to distance to targe
-		var chance = target.shipClass.mass / this.sensor.targetMass * Math.pow( this.sensor.targetRange / range, 2);
+		var chance = target.getMass() / this.sensor.targetMass * Math.pow( this.sensor.targetRange / range, 2);
 
 		// chance is double if maintaining contact
 		if (prevDetect) {
@@ -65,17 +65,17 @@ Sensor.prototype.scan = function(ship, target) {
 			// detected!
 			this.contacts[target.id] = true;
 			if (prevDetect) {
-				this.logger.println('Maintained contact to ' + target.name + ' chance was ' + Util.round(chance * 100, 2) + '%');
+				this.logger.println('Maintained contact to ' + target.getName() + ' chance was ' + Util.round(chance * 100, 2) + '%');
 			} else {
-				this.logger.println('Detected ' + target.name + ' chance was ' + Util.round(chance * 100, 2) + '%');
+				this.logger.println('Detected ' + target.getName() + ' chance was ' + Util.round(chance * 100, 2) + '%');
 			}
 		} else {
 			// not detected!
 			this.contacts[target.id] = false;
 			if (prevDetect) {
-				this.logger.println('Lost contact to ' + target.name + ' chance was ' + Util.round(chance * 100, 2) + '%');
+				this.logger.println('Lost contact to ' + target.getName() + ' chance was ' + Util.round(chance * 100, 2) + '%');
 			} else {
-				this.logger.println('Failed to detect ' + target.name + ' chance was ' + Util.round(chance * 100, 2) + '%');
+				this.logger.println('Failed to detect ' + target.getName() + ' chance was ' + Util.round(chance * 100, 2) + '%');
 			}
 		}
 	}

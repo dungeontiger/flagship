@@ -19,12 +19,12 @@ Dancing Scimitar has 0 MW in unused power.
 Dancing Scimitar performing sensor scan.
 Using Basic Mk 1 sensors.
 Range from Dancing Scimitar to Emperor's Voice is 10000 km.
-Detected Emperor's Voice chance was 85.2%
-Dancing Scimitar has contacts for: Emperor's Voice, 
+Failed to detect Emperor's Voice chance was 85.2%
+Dancing Scimitar has contacts for: 
 Dancing Scimitar moved to (0, 0, 0) km
 Dancing Scimitar accelerated to (0, 0, 0) km/s
 Dancing Scimitar acceleration changed to (0, 0, 0) km/s^2
-Dancing Scimitar accelerating toward Emperor's Voice (1, 0, 0) with thrust 1000 MN.
+Dancing Scimitar maintaining course and thrust.
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -40,7 +40,7 @@ Emperor's Voice has contacts for: Dancing Scimitar,
 Emperor's Voice moved to (10000, 0, 0) km
 Emperor's Voice accelerated to (0, 0, 0) km/s
 Emperor's Voice acceleration changed to (0, 0, 0) km/s^2
-Emperor's Voice accelerating toward Dancing Scimitar (-1, 0, 0) with thrust 1000 MN.
+Emperor's Voice accelerating toward undefined (-1, 0, 0) with thrust 1000 MN.
 === Starting turn #2
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -52,12 +52,12 @@ Dancing Scimitar has 0 MW in unused power.
 Dancing Scimitar performing sensor scan.
 Using Basic Mk 1 sensors.
 Range from Dancing Scimitar to Emperor's Voice is 10000 km.
-Maintained contact to Emperor's Voice chance was 170.4%
+Detected Emperor's Voice chance was 85.2%
 Dancing Scimitar has contacts for: Emperor's Voice, 
 Dancing Scimitar moved to (0, 0, 0) km
 Dancing Scimitar accelerated to (0, 0, 0) km/s
-Dancing Scimitar acceleration changed to (0.01, 0, 0) km/s^2
-Dancing Scimitar accelerating toward Emperor's Voice (1, 0, 0) with thrust 1000 MN.
+Dancing Scimitar acceleration changed to (0, 0, 0) km/s^2
+Dancing Scimitar accelerating toward undefined (1, 0, 0) with thrust 1000 MN.
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -73,7 +73,7 @@ Emperor's Voice has contacts for: Dancing Scimitar,
 Emperor's Voice moved to (10000, 0, 0) km
 Emperor's Voice accelerated to (0, 0, 0) km/s
 Emperor's Voice acceleration changed to (-0.01, 0, 0) km/s^2
-Emperor's Voice accelerating toward Dancing Scimitar (-1, 0, 0) with thrust 1000 MN.
+Emperor's Voice accelerating toward undefined (-1, 0, 0) with thrust 1000 MN.
 === Starting turn #3
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -88,9 +88,9 @@ Range from Dancing Scimitar to Emperor's Voice is 10000 km.
 Maintained contact to Emperor's Voice chance was 170.4%
 Dancing Scimitar has contacts for: Emperor's Voice, 
 Dancing Scimitar moved to (0, 0, 0) km
-Dancing Scimitar accelerated to (0.7, 0, 0) km/s
+Dancing Scimitar accelerated to (0, 0, 0) km/s
 Dancing Scimitar acceleration changed to (0.01, 0, 0) km/s^2
-Dancing Scimitar accelerating toward Emperor's Voice (1, 0, 0) with thrust 1000 MN.
+Dancing Scimitar accelerating toward undefined (1, 0, 0) with thrust 1000 MN.
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -106,7 +106,7 @@ Emperor's Voice has contacts for: Dancing Scimitar,
 Emperor's Voice moved to (10000, 0, 0) km
 Emperor's Voice accelerated to (-0.7, 0, 0) km/s
 Emperor's Voice acceleration changed to (-0.01, 0, 0) km/s^2
-Emperor's Voice accelerating toward Dancing Scimitar (-1, 0, 0) with thrust 1000 MN.
+Emperor's Voice accelerating toward undefined (-1, 0, 0) with thrust 1000 MN.
 === Starting turn #4
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -120,10 +120,10 @@ Using Basic Mk 1 sensors.
 Range from Dancing Scimitar to Emperor's Voice is 10000 km.
 Maintained contact to Emperor's Voice chance was 170.4%
 Dancing Scimitar has contacts for: Emperor's Voice, 
-Dancing Scimitar moved to (42.25, 0, 0) km
-Dancing Scimitar accelerated to (1.41, 0, 0) km/s
+Dancing Scimitar moved to (0, 0, 0) km
+Dancing Scimitar accelerated to (0.7, 0, 0) km/s
 Dancing Scimitar acceleration changed to (0.01, 0, 0) km/s^2
-Dancing Scimitar accelerating toward Emperor's Voice (1, 0, 0) with thrust 1000 MN.
+Dancing Scimitar accelerating toward undefined (1, 0, 0) with thrust 1000 MN.
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -133,13 +133,13 @@ Powering engines Reaction Drive.
 Emperor's Voice has 0 MW in unused power.
 Emperor's Voice performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Emperor's Voice to Dancing Scimitar is 9958 km.
-Maintained contact to Dancing Scimitar chance was 171.85%
+Range from Emperor's Voice to Dancing Scimitar is 10000 km.
+Maintained contact to Dancing Scimitar chance was 170.4%
 Emperor's Voice has contacts for: Dancing Scimitar, 
 Emperor's Voice moved to (9957.75, 0, 0) km
 Emperor's Voice accelerated to (-1.41, 0, 0) km/s
 Emperor's Voice acceleration changed to (-0.01, 0, 0) km/s^2
-Emperor's Voice accelerating toward Dancing Scimitar (-1, 0, 0) with thrust 1000 MN.
+Emperor's Voice accelerating toward undefined (-1, 0, 0) with thrust 1000 MN.
 === Starting turn #5
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -150,13 +150,13 @@ Powering engines Reaction Drive.
 Dancing Scimitar has 0 MW in unused power.
 Dancing Scimitar performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Dancing Scimitar to Emperor's Voice is 9915 km.
-Maintained contact to Emperor's Voice chance was 173.32%
+Range from Dancing Scimitar to Emperor's Voice is 9958 km.
+Maintained contact to Emperor's Voice chance was 171.85%
 Dancing Scimitar has contacts for: Emperor's Voice, 
-Dancing Scimitar moved to (126.76, 0, 0) km
-Dancing Scimitar accelerated to (2.11, 0, 0) km/s
+Dancing Scimitar moved to (42.25, 0, 0) km
+Dancing Scimitar accelerated to (1.41, 0, 0) km/s
 Dancing Scimitar acceleration changed to (0.01, 0, 0) km/s^2
-Dancing Scimitar accelerating toward Emperor's Voice (1, 0, 0) with thrust 1000 MN.
+Dancing Scimitar accelerating toward undefined (1, 0, 0) with thrust 1000 MN.
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -166,13 +166,13 @@ Powering engines Reaction Drive.
 Emperor's Voice has 0 MW in unused power.
 Emperor's Voice performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Emperor's Voice to Dancing Scimitar is 9831 km.
-Maintained contact to Dancing Scimitar chance was 176.31%
+Range from Emperor's Voice to Dancing Scimitar is 9915 km.
+Maintained contact to Dancing Scimitar chance was 173.32%
 Emperor's Voice has contacts for: Dancing Scimitar, 
 Emperor's Voice moved to (9873.24, 0, 0) km
 Emperor's Voice accelerated to (-2.11, 0, 0) km/s
 Emperor's Voice acceleration changed to (-0.01, 0, 0) km/s^2
-Emperor's Voice accelerating toward Dancing Scimitar (-1, 0, 0) with thrust 1000 MN.
+Emperor's Voice accelerating toward undefined (-1, 0, 0) with thrust 1000 MN.
 === Starting turn #6
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -183,13 +183,13 @@ Powering engines Reaction Drive.
 Dancing Scimitar has 0 MW in unused power.
 Dancing Scimitar performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Dancing Scimitar to Emperor's Voice is 9746 km.
-Maintained contact to Emperor's Voice chance was 179.38%
+Range from Dancing Scimitar to Emperor's Voice is 9831 km.
+Maintained contact to Emperor's Voice chance was 176.31%
 Dancing Scimitar has contacts for: Emperor's Voice, 
-Dancing Scimitar moved to (253.52, 0, 0) km
-Dancing Scimitar accelerated to (2.82, 0, 0) km/s
+Dancing Scimitar moved to (126.76, 0, 0) km
+Dancing Scimitar accelerated to (2.11, 0, 0) km/s
 Dancing Scimitar acceleration changed to (0.01, 0, 0) km/s^2
-Dancing Scimitar accelerating toward Emperor's Voice (1, 0, 0) with thrust 1000 MN.
+Dancing Scimitar accelerating toward undefined (1, 0, 0) with thrust 1000 MN.
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -199,13 +199,13 @@ Powering engines Reaction Drive.
 Emperor's Voice has 0 MW in unused power.
 Emperor's Voice performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Emperor's Voice to Dancing Scimitar is 9620 km.
-Maintained contact to Dancing Scimitar chance was 184.14%
+Range from Emperor's Voice to Dancing Scimitar is 9746 km.
+Maintained contact to Dancing Scimitar chance was 179.38%
 Emperor's Voice has contacts for: Dancing Scimitar, 
 Emperor's Voice moved to (9746.48, 0, 0) km
 Emperor's Voice accelerated to (-2.82, 0, 0) km/s
 Emperor's Voice acceleration changed to (-0.01, 0, 0) km/s^2
-Emperor's Voice accelerating toward Dancing Scimitar (-1, 0, 0) with thrust 1000 MN.
+Emperor's Voice accelerating toward undefined (-1, 0, 0) with thrust 1000 MN.
 === Starting turn #7
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -216,13 +216,13 @@ Powering engines Reaction Drive.
 Dancing Scimitar has 0 MW in unused power.
 Dancing Scimitar performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Dancing Scimitar to Emperor's Voice is 9493 km.
-Maintained contact to Emperor's Voice chance was 189.09%
+Range from Dancing Scimitar to Emperor's Voice is 9620 km.
+Maintained contact to Emperor's Voice chance was 184.14%
 Dancing Scimitar has contacts for: Emperor's Voice, 
-Dancing Scimitar moved to (422.54, 0, 0) km
-Dancing Scimitar accelerated to (3.52, 0, 0) km/s
+Dancing Scimitar moved to (253.52, 0, 0) km
+Dancing Scimitar accelerated to (2.82, 0, 0) km/s
 Dancing Scimitar acceleration changed to (0.01, 0, 0) km/s^2
-Dancing Scimitar accelerating toward Emperor's Voice (1, 0, 0) with thrust 1000 MN.
+Dancing Scimitar accelerating toward undefined (1, 0, 0) with thrust 1000 MN.
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -232,13 +232,13 @@ Powering engines Reaction Drive.
 Emperor's Voice has 0 MW in unused power.
 Emperor's Voice performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Emperor's Voice to Dancing Scimitar is 9324 km.
-Maintained contact to Dancing Scimitar chance was 196.01%
+Range from Emperor's Voice to Dancing Scimitar is 9493 km.
+Maintained contact to Dancing Scimitar chance was 189.09%
 Emperor's Voice has contacts for: Dancing Scimitar, 
 Emperor's Voice moved to (9577.46, 0, 0) km
 Emperor's Voice accelerated to (-3.52, 0, 0) km/s
 Emperor's Voice acceleration changed to (-0.01, 0, 0) km/s^2
-Emperor's Voice accelerating toward Dancing Scimitar (-1, 0, 0) with thrust 1000 MN.
+Emperor's Voice accelerating toward undefined (-1, 0, 0) with thrust 1000 MN.
 === Starting turn #8
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -249,13 +249,13 @@ Powering engines Reaction Drive.
 Dancing Scimitar has 0 MW in unused power.
 Dancing Scimitar performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Dancing Scimitar to Emperor's Voice is 9155 km.
-Maintained contact to Emperor's Voice chance was 203.31%
+Range from Dancing Scimitar to Emperor's Voice is 9324 km.
+Maintained contact to Emperor's Voice chance was 196.01%
 Dancing Scimitar has contacts for: Emperor's Voice, 
-Dancing Scimitar moved to (633.8, 0, 0) km
-Dancing Scimitar accelerated to (4.23, 0, 0) km/s
+Dancing Scimitar moved to (422.54, 0, 0) km
+Dancing Scimitar accelerated to (3.52, 0, 0) km/s
 Dancing Scimitar acceleration changed to (0.01, 0, 0) km/s^2
-Dancing Scimitar accelerating toward Emperor's Voice (1, 0, 0) with thrust 1000 MN.
+Dancing Scimitar accelerating toward undefined (1, 0, 0) with thrust 1000 MN.
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -265,13 +265,13 @@ Powering engines Reaction Drive.
 Emperor's Voice has 0 MW in unused power.
 Emperor's Voice performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Emperor's Voice to Dancing Scimitar is 8944 km.
-Maintained contact to Dancing Scimitar chance was 213.03%
+Range from Emperor's Voice to Dancing Scimitar is 9155 km.
+Maintained contact to Dancing Scimitar chance was 203.31%
 Emperor's Voice has contacts for: Dancing Scimitar, 
 Emperor's Voice moved to (9366.2, 0, 0) km
 Emperor's Voice accelerated to (-4.23, 0, 0) km/s
 Emperor's Voice acceleration changed to (-0.01, 0, 0) km/s^2
-Emperor's Voice accelerating toward Dancing Scimitar (-1, 0, 0) with thrust 1000 MN.
+Emperor's Voice accelerating toward undefined (-1, 0, 0) with thrust 1000 MN.
 === Starting turn #9
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -282,13 +282,13 @@ Powering engines Reaction Drive.
 Dancing Scimitar has 0 MW in unused power.
 Dancing Scimitar performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Dancing Scimitar to Emperor's Voice is 8732 km.
-Maintained contact to Emperor's Voice chance was 223.46%
+Range from Dancing Scimitar to Emperor's Voice is 8944 km.
+Maintained contact to Emperor's Voice chance was 213.03%
 Dancing Scimitar has contacts for: Emperor's Voice, 
-Dancing Scimitar moved to (887.32, 0, 0) km
-Dancing Scimitar accelerated to (4.93, 0, 0) km/s
+Dancing Scimitar moved to (633.8, 0, 0) km
+Dancing Scimitar accelerated to (4.23, 0, 0) km/s
 Dancing Scimitar acceleration changed to (0.01, 0, 0) km/s^2
-Dancing Scimitar accelerating toward Emperor's Voice (1, 0, 0) with thrust 1000 MN.
+Dancing Scimitar accelerating toward undefined (1, 0, 0) with thrust 1000 MN.
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -298,13 +298,13 @@ Powering engines Reaction Drive.
 Emperor's Voice has 0 MW in unused power.
 Emperor's Voice performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Emperor's Voice to Dancing Scimitar is 8479 km.
-Maintained contact to Dancing Scimitar chance was 237.02%
+Range from Emperor's Voice to Dancing Scimitar is 8732 km.
+Maintained contact to Dancing Scimitar chance was 223.46%
 Emperor's Voice has contacts for: Dancing Scimitar, 
 Emperor's Voice moved to (9112.68, 0, 0) km
 Emperor's Voice accelerated to (-4.93, 0, 0) km/s
 Emperor's Voice acceleration changed to (-0.01, 0, 0) km/s^2
-Emperor's Voice accelerating toward Dancing Scimitar (-1, 0, 0) with thrust 1000 MN.
+Emperor's Voice accelerating toward undefined (-1, 0, 0) with thrust 1000 MN.
 === Starting turn #10
 Dancing Scimitar producing power.
 Small Fusion produces 10 MW.
@@ -315,13 +315,13 @@ Powering engines Reaction Drive.
 Dancing Scimitar has 0 MW in unused power.
 Dancing Scimitar performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Dancing Scimitar to Emperor's Voice is 8225 km.
-Maintained contact to Emperor's Voice chance was 251.86%
+Range from Dancing Scimitar to Emperor's Voice is 8479 km.
+Maintained contact to Emperor's Voice chance was 237.02%
 Dancing Scimitar has contacts for: Emperor's Voice, 
-Dancing Scimitar moved to (1183.1, 0, 0) km
-Dancing Scimitar accelerated to (5.63, 0, 0) km/s
+Dancing Scimitar moved to (887.32, 0, 0) km
+Dancing Scimitar accelerated to (4.93, 0, 0) km/s
 Dancing Scimitar acceleration changed to (0.01, 0, 0) km/s^2
-Dancing Scimitar accelerating toward Emperor's Voice (1, 0, 0) with thrust 1000 MN.
+Dancing Scimitar accelerating toward undefined (1, 0, 0) with thrust 1000 MN.
 Emperor's Voice producing power.
 Small Fusion produces 10 MW.
 Small Fusion produces 10 MW.
@@ -331,11 +331,11 @@ Powering engines Reaction Drive.
 Emperor's Voice has 0 MW in unused power.
 Emperor's Voice performing sensor scan.
 Using Basic Mk 1 sensors.
-Range from Emperor's Voice to Dancing Scimitar is 7930 km.
-Maintained contact to Dancing Scimitar chance was 271%
+Range from Emperor's Voice to Dancing Scimitar is 8225 km.
+Maintained contact to Dancing Scimitar chance was 251.86%
 Emperor's Voice has contacts for: Dancing Scimitar, 
 Emperor's Voice moved to (8816.9, 0, 0) km
 Emperor's Voice accelerated to (-5.63, 0, 0) km/s
 Emperor's Voice acceleration changed to (-0.01, 0, 0) km/s^2
-Emperor's Voice accelerating toward Dancing Scimitar (-1, 0, 0) with thrust 1000 MN.
+Emperor's Voice accelerating toward undefined (-1, 0, 0) with thrust 1000 MN.
 End of log.
