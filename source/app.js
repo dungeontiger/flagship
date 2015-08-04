@@ -21,8 +21,8 @@ gameEngine.setLogger(logger);
 // load players and fleets
 gameEngine.loadBattle(JSON.parse(fs.readFileSync(gameDir + '/battle.json', 'utf8')));
 
-// set the turn duration to 1 minute
-gameEngine.setTurnInterval(1);
+// set the turn duration to 60 seconds
+gameEngine.setTurnInterval(60);
 
 while (!gameEngine.gameOver()) {
 	gameEngine.computeTurn();

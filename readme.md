@@ -29,7 +29,7 @@ Unless otherwise stated, the units of measure used are:
 
 * distance in kilometers (km)
 * currency in Megacredits (MCr)
-* time in minutes (min)
+* time in seconds (s)
 * mass in (metric) tonnes (t)
 * force in MegaNewtons (MN)
 * power in MegaWatts (MW)

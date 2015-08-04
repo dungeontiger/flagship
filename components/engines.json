@@ -6,6 +6,6 @@
 		"mass": 50,
 		"cost": 300,
 		"power": 10,
-		"thrust": 10
+		"thrust": 1000
 	}
 }

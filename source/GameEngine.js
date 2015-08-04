@@ -12,6 +12,7 @@ GameEngine.setLogger = function(logger) {
 };
 
 GameEngine.setTurnInterval = function(t) {
+	// seconds per turn
 	this.turnInterval = t;	
 };
 
@@ -214,24 +215,32 @@ GameEngine.move = function(ship) {
 	// move the ship based on its current velocity
 	// update the ship's velocity based on its current acceleration
 	
+	// new position = old position + velocity * time
 	ship.position.x += ship.velocity.x * this.turnInterval;
 	ship.position.y += ship.velocity.y * this.turnInterval;
 	ship.position.z += ship.velocity.z * this.turnInterval;
 	
-	this.logger.println(ship.name + ' moved to (' + ship.position.x + ', ' + ship.position.y + ', ' + ship.position.z + ') km' );
+	this.logger.println(ship.name + ' moved to (' + Util.round(ship.position.x, 2) + ', ' + 
+		Util.round(ship.position.y,2) + ', ' + Util.round(ship.position.z,2) + ') km' );
 
+	// new velocity = old velocity plus acceleration * time
 	ship.velocity.x += ship.acceleration.x * this.turnInterval;
 	ship.velocity.y += ship.acceleration.y * this.turnInterval;
 	ship.velocity.z += ship.acceleration.z * this.turnInterval;
 
-	this.logger.println(ship.name + ' accelerated to (' + ship.velocity.x + ', ' + ship.velocity.y + ', ' + ship.velocity.z + ') km/min' );
+	this.logger.println(ship.name + ' accelerated to (' + Util.round(ship.velocity.x,2) + ', ' + 
+		Util.round(ship.velocity.y,2) + ', ' + Util.round(ship.velocity.z,2) + ') km/s' );
 
-	// TODO: Check to see if this is correct or not
-	ship.acceleration.x += ship.thrust / ship.mass * ship.heading.x * this.turnInterval;
-	ship.acceleration.y += ship.thrust / ship.mass * ship.heading.y * this.turnInterval;
-	ship.acceleration.z += ship.thrust / ship.mass * ship.heading.z * this.turnInterval;
+	// acceleration is an instaneous change based on the forces acting on the ship and the its heading
+	// thrust in MN, mass in tonnes, divide by 1000 to get km/s^2
+	var acceleration =  (ship.thrust / ship.shipClass.mass ) / 1000;
+	
+	ship.acceleration.x = acceleration * ship.heading.x;
+	ship.acceleration.y = acceleration * ship.heading.y;
+	ship.acceleration.z = acceleration * ship.heading.z;
 
-	this.logger.println(ship.name + ' acceleration changed to (' + ship.acceleration.x + ', ' + ship.acceleration.y + ', ' + ship.acceleration.z + ') km/min^2' );
+	this.logger.println(ship.name + ' acceleration changed to (' + Util.round(ship.acceleration.x,2) + ', ' + 
+		Util.round(ship.acceleration.y,2) + ', ' + Util.round(ship.acceleration.z,2) + ') km/s^2' );
 };
 
 GameEngine.setHeadingAndEngine = function(ship) {
