@@ -11,7 +11,7 @@ Currently the engine is being designed so the components and ships are just test
 
 You can try the test battle by navigating to the flagship directory and entering:
 
-`node source app.js test`
+`node source\\app.js test`
 
 The simulation will run for 5 turns and the results will be written to a log in the games\test directory.
 
@@ -33,3 +33,5 @@ Unless otherwise stated, the units of measure used are:
 * mass in (metric) tonnes (t)
 * force in MegaNewtons (MN)
 * power in MegaWatts (MW)
+* speed in kilometers per second (km/s)
+* acceleration in kilometers per second squared (km/s^2)
